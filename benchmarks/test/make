@@ -1,0 +1,2 @@
+CC    ---> ../../../cil/bin/cilly --doCrestInstrument 
+FLAGS ---> -L../../../lib -lcrest -lstdc++ -g -O2 -O0

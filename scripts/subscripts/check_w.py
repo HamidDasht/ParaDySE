@@ -80,24 +80,26 @@ def gen_run_cmd(pgm_config, weight_idx, iter):
 
 	if (pgm_config['pgm_name']).find('expat-') >= 0:
 		input = "expat.input"
-	if (pgm_config['pgm_name'] == 'grep-2.2'):
+	elif (pgm_config['pgm_name'] == 'grep-2.2'):
 		input = "grep.input"
-	if pgm_config['pgm_name'] == 'gawk-3.0.3':
+	elif pgm_config['pgm_name'] == 'gawk-3.0.3':
 		input = "gawk.input"
-	if (pgm_config['pgm_name']).find('sed-') >= 0:
+	elif (pgm_config['pgm_name']).find('sed-') >= 0:
 		input = "sed.input"
-	if pgm_config['pgm_name'] == 'vim-5.7':
+	elif pgm_config['pgm_name'] == 'vim-5.7':
 		input = "vim.input"
-	if pgm_config['pgm_name'] == 'tree-1.6.0':
+	elif pgm_config['pgm_name'] == 'tree-1.6.0':
 		input = "tree.input"
-	if pgm_config['pgm_name'] == 'replace':
+	elif pgm_config['pgm_name'] == 'replace':
 		input = "replace.input"
-	if pgm_config['pgm_name'] == 'floppy':
+	elif pgm_config['pgm_name'] == 'floppy':
 		input = "floppy.input"
-	if pgm_config['pgm_name'] == 'cdaudio':
+	elif pgm_config['pgm_name'] == 'cdaudio':
 		input = "cdaudio.input"
-	if pgm_config['pgm_name'] == 'kbfiltr':
+	elif pgm_config['pgm_name'] == 'kbfiltr':
 		input = "kbfiltr.input"
+        else:
+                input = pgm_config['pgm_name'] + '.input'
 
 	log = "logs/" + "__".join([pgm_name+"check"+args.trial, str(weight_idx), "ours", str(iter)]) + ".log"
 	weight = configs['script_path'] +"/"+ str(trial)+ "_weights/" + str(weight_idx) + ".weight"

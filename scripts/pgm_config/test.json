@@ -1,0 +1,6 @@
+{
+	"pgm_name": "test",
+	"pgm_dir": "../benchmarks/test/",
+	"exec_dir": "./src",
+	"exec_cmd": "'./test'"
+}

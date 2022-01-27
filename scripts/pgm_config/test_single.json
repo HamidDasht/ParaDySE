@@ -1,0 +1,6 @@
+{
+	"pgm_name": "test_single",
+	"pgm_dir": "../benchmarks/test_single/",
+	"exec_dir": "./",
+	"exec_cmd": "'./pipeline'"
+}
