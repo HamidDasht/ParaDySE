@@ -27,13 +27,13 @@ $ screen
 $ cd ParaDySE/benchmarks/tree-1.6.0
 $ make
 $ cd ~/ParaDySE/scripts
-$ python fullauto.py pgm_config/tree.json 1000 20 
+$ python fullauto.py pgm_config/tree.json 100 1
 ```
 
 Each argument of the last command means:
 -	**pgm_config/tree.json** : a json file to describe the benchmark.
--	**1000** : the number of parameters to evaluate in **Find Phase**
--	**20** : the number of cpu cores to use in parallel
+-	**100** : the number of parameters to evaluate in **Find Phase**
+-	**1** : the number of cpu cores to use in parallel
 
 If the script successfully ends, you can see the following command:
 ```sh
